@@ -11,7 +11,9 @@ public interface IUserDao {
 	
 	void insert(UserModel user);
 	
-	
-	
+	UserModel findByUserName(String username);
 
+	UserModel findByEmail(String email);
+
+	void update(UserModel user);
 }
